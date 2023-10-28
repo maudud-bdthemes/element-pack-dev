@@ -1,0 +1,30 @@
+{
+  "name": "bdthemes-element-pack",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bdthemes-element-pack",
+    "theme"
+  ],
+  "author": "bdthemes",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-build-number": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-rtlcss": "^2.0.2",
+    "grunt-terser": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  },
+  "dependencies": {
+    "grunt-contrib-concat": "^1.0.1"
+  },
+  "buildnum": "5143"
+}
