@@ -1,0 +1,184 @@
+.bdt-honeycombs-area .bdt-honeycombs{
+	position: relative;
+	overflow: hidden;
+	width: 100%; 
+	text-align: center; 
+	.bdt-honeycombs-inner-wrapper{
+		display: inline-block;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: auto;
+		.bdt-comb {
+			position: absolute;
+			display: inline-block;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			&.placeholder{
+				cursor: default;
+				span {
+					color: #FFF;
+					opacity: 0;
+				}
+				&:hover{
+					span {
+						color: #fff;
+						opacity: 0;
+					}
+				} 
+			}
+			.bdt-icon-hex-lg {
+				background-color: #0ab3e6;
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
+				background-position: center;
+				transition: background 0.3s ease;
+			}
+			.bdt-icon-hex-lg {
+				font-family: 'element-pack';
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			span.firefox {
+				left: 0;
+				position: absolute;
+				// top: 20px;
+				top: 0;
+				z-index: -1;
+			}
+
+			.bdt-inner {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				-webkit-box-align: center;
+				display: flex;
+				display: -webkit-flex;
+				transform: translateZ(0);
+				backface-visibility: hidden;
+				perspective: 1000;
+				z-index: 9;
+				transition: all 0.3s ease;
+				.bdt-wrapper {
+					margin: auto;
+					padding: 25px;
+					.bdt-title{
+						margin: 0;
+						color: #fff;
+						font-weight: 600;
+					}
+					.bdt-honeycombs-icon{
+						color: #fff;
+						font-size: 2rem;
+						padding-bottom: .5rem;
+						svg {
+							fill: #ffffff;
+							width: 1.5em;
+							height: 1.5em;
+						}
+					}
+					.bdt-content{
+						margin: 0;
+						padding: 10px;
+						color: #fff;
+						font-size: 14px;
+						line-height: 1.2;
+					}
+				}
+				&.back {
+					opacity: 0;
+				}
+			}
+			&:hover{
+				.bdt-inner.back{
+					opacity: 1;
+				}
+				.bdt-inner.front {
+					opacity: 0;
+				}
+			}
+			.bdt-inner.back .bdt-wrapper {
+				width: inherit;
+				overflow: hidden;
+			}
+			&:hover{
+				.bdt-comb-inner-wrapper{
+					.bdt-icon-hex-lg {
+						background-color: #FF6493;
+						-webkit-background-clip: text;
+						background-clip: text;
+						color: transparent;
+						background-position: center;
+						filter:  none;
+						//background-image: unset !important;
+					}
+				}
+			}
+		}
+
+	}
+
+	&.honeycomb-des-visibility-hide {
+		.bdt-honeycombs-inner-wrapper {
+			.bdt-comb {
+				.bdt-inner {
+					&.back {
+						opacity: 0;
+					}
+					&.front {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	&.honeycomb-title-visibility-hide {
+		.bdt-honeycombs-inner-wrapper {
+			.bdt-comb {
+				.bdt-inner.back {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&.honeycomb-title-visibility-hide .bdt-honeycombs-inner-wrapper .bdt-comb .bdt-inner.front {
+		opacity: 0 ;
+	}
+
+	.bdt-icon-hex-lg {
+		&:before{
+			content: "\e90c";
+		}
+	}
+	&.honeycomb-style-radius {
+		.bdt-icon-hex-lg {
+			&:before{
+				content: "\e604";
+			}
+		}
+	}
+	&.honeycomb-style-radius2 {
+		.bdt-icon-hex-lg {
+			&:before{
+				content: "\e90d";
+			}
+		}
+	}
+	&.honeycomb-style-zigzag {
+		.bdt-icon-hex-lg {
+			&:before{
+				content: "\e90f";
+			}
+		}
+	}
+}
+

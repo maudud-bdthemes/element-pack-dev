@@ -1,0 +1,55 @@
+@import url(../base/variables.less);
+
+.bdt-the-newsletter {
+	.tnp {
+		input:not([type=submit]){
+			max-width: unset;
+			outline:none !important;
+			line-height: unset;
+		}
+		input[type=submit]{
+			width: 29%;
+			background-color: @global-link-color;
+			outline:none !important;
+			line-height: unset;
+			cursor: pointer;
+			border: 1px solid @global-link-color;
+			transition: all 1s;
+			&:hover{
+				background-color: #0e73d8;
+			}
+		}
+		&.tnp-subscription-minimal{
+			form{
+				display: flex;
+			}
+		}
+	}
+	.tnp-subscription {
+		max-width: unset;
+	}
+	&.firstname-hide{
+		.tnp-field-firstname{
+			display: none;
+		}
+	}
+	&.lastname-hide{
+		.tnp-field-surname{
+			display: none;
+		}
+	}
+	&.submit-full-width{
+		.tnp-submit{
+			width: 100% !important;
+			max-width: unset;
+		}
+	}
+	&.style-standard{
+		.tnp{
+			input:not([type=submit]){
+				height: unset;
+			}
+		}
+	}
+}
+

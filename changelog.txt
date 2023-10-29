@@ -18,6 +18,8 @@
 ### Fixed
 
 - Focus issue fixed in Social Share widget
+- Ajax Search dropdown styling Control issue fixed in Search Widget
+- Ajax Search Dropdown translated issue fixed in Search Widget
 
 ## 7.5.4 [15th October 2023]
 

@@ -1,0 +1,66 @@
+﻿@import url(../base/variables.less);
+
+.bdt-circle-menu-container {
+    z-index: 99;
+    position: relative;
+    -webkit-transform: translate(var(--ep-circle-menu-h-offset, 0), var(--ep-circle-menu-v-offset, 0));
+    transform: translate(var(--ep-circle-menu-h-offset, 0), var(--ep-circle-menu-v-offset, 0));
+    .bdt-menu-icon {
+        font-size: 14px;
+        svg {
+            width: 1em;
+            height: 1em;
+        }
+    }
+}
+.bdt-circle-menu {
+    li {
+        background:#000;
+        color:#fff;
+        font-size:25px;
+        &.bdt-toggle-icon {
+            display: block !important;
+            width: 50px !important;
+            height: 50px !important;
+            text-align: center !important;
+            line-height: 50px !important;
+            position: relative !important;
+            z-index: 1000 !important;
+            border-radius: 50% !important;
+            transition: all 500ms ease !important;
+            vertical-align: middle;
+            transform-origin: center;
+            background: @global-link-color;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color:#fff;
+            width: 100%;
+            svg {
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                fill: #fff;
+            }
+            i {
+                font-size: 16px;
+            }
+        }
+        span {
+            display: inline-flex;
+        }
+    }
+    &:not(.circleMenu-closed) {
+        li {
+            display: none;
+        }
+    }
+    &.circleMenu-open {
+        > li:first-child {
+            transform: rotate(360deg);
+            transform-origin: center;
+        }
+    }
+}

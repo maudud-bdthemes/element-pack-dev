@@ -1,0 +1,101 @@
+.bdt-give-receipt {
+    table.give-table {
+        text-shadow: none;
+    }
+}
+.bdt-give-receipt {
+    #give-email-access-form {
+        input#give-email {
+            padding: 10px 16px;
+            border: 1px solid #ddd;
+            outline: none;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    input.give-submit {
+        padding: 8px 16px;
+        border: 1px solid #efefef;
+        cursor: pointer;
+        outline: none;
+    }
+}
+.bdt-give-receipt {
+    .give-mobile-title {
+        display: none;
+    }
+    table.give-table {
+        text-shadow: none;
+    }
+
+    .give-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        th {
+            padding: 16px 12px;
+            text-align: left;
+            vertical-align: bottom;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        td {
+            padding: 16px 12px;
+            vertical-align: top;
+            text-align: left;
+        }
+        td>:last-child {
+            margin-bottom: 0;
+        }
+        tfoot {
+            font-size: .875rem;
+        }
+        caption {
+            font-size: .875rem;
+            text-align: left;
+            color: #999;
+        }
+        >tr:nth-of-type(odd),
+        tbody tr:nth-of-type(odd) {
+            background: #f8f8f8;
+        }
+    }
+    *+.give-table {
+        margin-top: 20px;
+    }
+}
+
+//Responsive
+@media (max-width: 959px) {
+    .bdt-give-receipt {
+        .give-table,
+        .give-table tbody,
+        .give-table th,
+        .give-table td,
+        .give-table tr {
+            display:block;
+        }
+        .give-table thead {
+            display: none;
+        }
+        .give-table th,
+        .give-table td {
+            width: auto !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important;
+        }
+        .give-table th:not(:first-child):not(.give-table-link),
+        .give-table td:not(:first-child):not(.give-table-link),
+        .give-table .give-table-link:not(:first-child)>a {
+            padding-top: 5px !important;
+        }
+        .give-table th:not(:last-child):not(.give-table-link),
+        .give-table td:not(:last-child):not(.give-table-link),
+        .give-table .give-table-link:not(:last-child)>a {
+            padding-bottom: 5px !important;
+        }
+    }
+}

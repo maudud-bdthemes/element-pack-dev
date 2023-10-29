@@ -1,0 +1,73 @@
+.bdt-progress-pie-wrapper {
+    text-align: center;
+    .bdt-progress-pie {
+        text-align: center;
+        position: relative;
+        transform-style: preserve-3d;
+        padding: 20px;
+        svg {
+            margin: 0 auto;
+            ellipse { stroke: #f5f5f5; }
+            path { stroke: #14ABF4; }
+        }
+        .bdt-progress-pie-number,
+        .bdt-progress-pie-text {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        &.bdt-pp-lc-square {
+            svg {
+                path { stroke-linecap: square; }
+            }
+        }
+        &.bdt-pp-lc-round {
+            svg {
+                path { stroke-linecap: round; }
+            }
+        }
+        &.bdt-pp-lc-butt {
+            svg {
+                path { stroke-linecap: butt; }
+            }
+        }
+        .bdt-progress-pie-label {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            div {
+                line-height: 1.2em;
+            }
+        }
+        .bdt-progress-pie-svg {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            vertical-align: middle;
+            overflow: hidden;
+            svg {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                * {
+                    fill: none;
+                }
+            }
+        }
+    }
+    .bdt-progress-pie-title {
+        text-align: center;
+        padding: 30px;
+        margin: 0;
+        font-size: 1.1rem;
+        &:not(.bdt-no-divider) {
+            border-top: 1px solid rgba(100, 100, 100, 0.1);
+        }
+    }
+}
+
+
+

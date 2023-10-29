@@ -1,0 +1,40 @@
+.elementor-widget-bdt-charitable-donors {
+    &.bdt-campaigns-orientation-horizontal {
+        .donors-list {
+            .donor {
+                .avatar {
+                    float: left;
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+    &.bdt-campaigns-orientation-vertical {
+        .donors-list {
+            .donor {
+                .avatar {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+    .bdt-charitable-donors {
+        .donors-list {
+            display: grid;
+            margin: 0;
+            .donor {
+                width: auto;
+                padding: 15px;
+                border: 1px solid #e6e6e6;
+                transition: all .3s ease;
+            }
+            .donor-donation-amount, 
+            .donor-location, 
+            .donor-name {
+                margin: 0;
+                transition: color .3s ease;
+            }
+        }
+    }
+}

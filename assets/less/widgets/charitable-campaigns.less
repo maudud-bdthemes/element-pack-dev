@@ -1,0 +1,85 @@
+@import url(../base/variables.less);
+
+.elementor-widget-bdt-charitable-campaigns {
+    &.bdt-campaigns-items-height-yes {
+        .campaign-loop.campaign-grid .campaign, 
+        .campaign-loop.campaign-grid .hentry {
+            height: auto;
+        }
+    }
+}
+.bdt-charitable-campaigns {
+    .campaign-loop.campaign-list {
+        h3 {
+            margin-top: 0;
+            text-decoration: none;
+        }
+        a.button {
+            color: #fff;
+            background-color: @global-link-color;
+            &:hover {
+                color: #fff; 
+                background-color: @global-link-hover-color;
+            }
+        }
+    }
+    .campaign-loop.campaign-list li.campaign, 
+    .campaign-loop.campaign-list .hentry {
+        padding: 0 0 1em 0;
+        margin: 0 0 1em 0;
+        border-bottom: 1px solid #e6e6e6;
+        transition: all .3s ease;
+        &:nth-last-child(1) {
+            padding: 0;
+            margin: 0;
+            border-bottom: 0;
+        }
+    }
+    .campaign-loop.campaign-list .wp-post-image, 
+    .campaign-loop.campaign-grid .wp-post-image {
+        margin-bottom: 1em;
+        padding-bottom: 0;
+    }
+    .campaign-loop.campaign-grid {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .hentry,
+        .campaign {
+            list-style: none;
+            float: inherit;
+            margin: 0;
+            padding: 1em;
+            border: 1px solid #e6e6e6;
+            transition: all .3s ease;
+            h3 {
+                margin-top: 0;
+                text-decoration: none;
+            }
+            a.button {
+                color: #fff;
+                background-color: @global-link-color;
+                padding: 8px 16px;
+                &:hover {
+                    color: #fff; 
+                    background-color: @global-link-hover-color;
+                }
+            }
+        }
+        .campaign-donation {
+            text-align: inherit;
+        }
+        .wp-post-image {
+            width: 100%;
+        }
+        .campaign, 
+        .hentry {
+            width: 100%;
+            height: max-content;
+        }
+        &:after, 
+        &:before {
+            content: none;
+        }
+    }
+}

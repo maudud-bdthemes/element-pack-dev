@@ -15,7 +15,7 @@
  */
 
 // Some pre defined value for easy use
-define('BDTEP_VER', '7.5.4');
+define('BDTEP_VER', time());
 define('BDTEP_TPL_DB_VER', '1.0.0');
 define('BDTEP__FILE__', __FILE__);
 if (!defined('BDTEP_TITLE')) {

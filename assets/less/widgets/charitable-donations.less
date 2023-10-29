@@ -1,0 +1,102 @@
+.bdt-charitable-donations {
+    .charitable-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        th {
+            padding: 16px 12px;
+            text-align: left;
+            vertical-align: bottom;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        td {
+            padding: 16px 12px;
+            vertical-align: top
+        }
+        td>:last-child {
+            margin-bottom: 0
+        }
+        tfoot {
+            font-size: .875rem
+        }
+        caption {
+            font-size: .875rem;
+            text-align: left;
+            color: #999
+        }
+        >tr:nth-of-type(odd),
+        tbody tr:nth-of-type(odd) {
+            background: #f8f8f8
+        }
+    }
+    *+.charitable-table {
+        margin-top: 20px;
+    }
+}
+
+.bdt-charitable-donations {
+    .charitable-login-form {
+        input[type="text"], 
+        input[type="password"] {
+            outline: none;
+            width: 100%;
+            padding: 8px 16px;
+            border: 1px solid #ebebeb;
+        }
+        .login-submit .button {
+            outline: none;
+            cursor: pointer;
+            padding: 6px 12px;
+            border: 0;
+            color: #798184;
+        }
+    }
+    .charitable-login-form > p > a:nth-last-child(1) {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            top: 50%;
+            height: 24px;
+            width: 3px;
+            background: #ebebeb;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .bdt-charitable-donations {
+        .charitable-table,
+        .charitable-table tbody,
+        .charitable-table th,
+        .charitable-table td,
+        .charitable-table tr {
+            display:block
+        }
+        .charitable-table thead {
+            display: none
+        }
+        .charitable-table th,
+        .charitable-table td {
+            width: auto !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            overflow: visible !important;
+            white-space: normal !important
+        }
+        .charitable-table th:not(:first-child):not(.charitable-table-link),
+        .charitable-table td:not(:first-child):not(.charitable-table-link),
+        .charitable-table .charitable-table-link:not(:first-child)>a {
+            padding-top: 5px !important
+        }
+        .charitable-table th:not(:last-child):not(.charitable-table-link),
+        .charitable-table td:not(:last-child):not(.charitable-table-link),
+        .charitable-table .charitable-table-link:not(:last-child)>a {
+            padding-bottom: 5px !important
+        }
+    }
+}

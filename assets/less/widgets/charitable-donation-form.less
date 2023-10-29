@@ -1,0 +1,97 @@
+@import url(../base/variables.less);
+
+.bdt-charitable-donation-form {
+    #charitable-donor-fields {
+        padding: 1.5em 20px .5em;
+        .charitable-form-header {
+            padding: 0;
+        }
+    }
+    #charitable-meta-fields, 
+    #charitable-user-fields {
+        padding: 0;
+        margin-top: 15px;
+    }
+    .charitable-donor-details {
+        padding: 0;
+        .donor-address, 
+        .donor-contact-details {
+            margin: 0;
+        }
+    }
+    .charitable-form-field {
+        input, select, textarea {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+        label {
+            abbr.required {
+                text-decoration: none;
+            }
+        }
+    }
+    .charitable-donation-form {
+        .custom-donation-input {
+            border: 1px solid #ddd;
+            outline: none;
+            width: 100%;
+            padding: 5px 10px;
+        }
+        span.custom-donation-amount-wrapper {
+            padding: 6.5px 16px;
+            display: flex !important;
+            label {
+                width: 50%;
+            }
+        }
+        .donation-amount.selected {
+            background-color: @global-link-color;
+            border-color: @global-link-color;
+        }
+    }
+    .charitable-submit-field {
+        .button {
+            background-color: @global-link-color;
+            outline: none;
+            &:hover {
+                background-color: @global-link-hover-color;
+            }
+        }
+    }
+    .charitable-form-fields .charitable-fieldset a:not(.button) {
+        color: @global-link-color;
+        &:hover {
+            color: @global-link-hover-color;
+        }
+    }
+    .charitable-radio-list {
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: 0;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+    
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: 0;
+            left: -1px;
+            position: relative;
+            background-color: @global-link-color;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+    }
+}

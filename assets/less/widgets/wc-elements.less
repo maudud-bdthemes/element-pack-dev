@@ -1,0 +1,37 @@
+@import url(../base/variables.less);
+
+.elementor-widget-bdt-wc-elements {
+    .woocommerce {
+      .woocommerce-cart-form {
+        .product-remove {
+          text-align: center !important;
+        }
+        a.remove {
+          display: inline-block;
+          font-size: 18px;
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          font-weight: 400;
+          color: #bbb !important;
+          background: transparent;
+          border: 1px solid;
+          border-radius: 50%;
+          box-sizing: content-box;
+          &:hover {
+            background-color: transparent;
+            color: #333 !important;
+          }
+        }
+        .product-name a {
+          color: @global-link-color;
+          &:hover {
+            color: @global-link-hover-color;
+          }
+        }
+      }
+      table.cart img {
+        width: 48px;
+      }
+    }
+  }

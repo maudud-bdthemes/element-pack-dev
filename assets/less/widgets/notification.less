@@ -1,0 +1,44 @@
+.bdt-notification {
+	>.bdt-notification-message {
+		>.bdt-notification-close {
+			svg {
+				width: 1em;
+				height: 1em;
+				display: flex;
+			}
+		}
+		p:nth-last-child(1) {
+			margin: 0;
+		}
+	}
+}
+
+.bdt-notify-wrapper{
+	z-index:9999;
+	.bdt-notify-wrapper-container{
+		margin: 0 auto; 
+		position: relative;
+		>.bdt-alert-close {
+			top: 50%;
+			right: -15px;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+		p:nth-last-child(1) {
+			margin: 0;
+		}
+	}
+	&.bdt-alert {
+		margin: 0;
+		padding: 30px 60px 30px 30px;
+		.bdt-close {
+			>svg {
+				width: 1em;
+				height: 1em;
+			}
+		}
+	}
+	&.bdt-notify-inline{
+		z-index:unset;
+	}
+}

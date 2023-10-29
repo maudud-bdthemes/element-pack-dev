@@ -1,0 +1,117 @@
+@import url(fonts/widget/style.less);
+
+
+@icomoon-font-family: "element-pack-widgets-icon";
+@icomoon-font-path: "../fonts";
+
+
+
+#elementor-panel-category-element-pack {
+  .elementor-element {
+    &:hover {
+      .icon,
+      .title {
+        color: #14ABF4;
+      }
+    }
+  }
+}
+
+.elementor-element {
+  .icon {
+    position: relative;
+
+    .bdt-new {
+      &:after {
+        color: #14ABF4;
+        opacity: 1 !important;
+      }
+    }
+
+    i[class^="bdt-wi-"] {
+      &:before {
+        font-size: 40px;
+    }
+      &:after {
+        content: '\e988';
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 12px;
+        opacity: .4;
+        //color: #07afff;
+      }
+    }
+  }
+}
+
+
+#elementor-panel #elementor-panel-header-title,
+#elementor-panel .elementor-control-title,
+#elementor-panel .elementor-section-title {
+  span.bdt-ep-widget-badge {
+    &:after {
+      font-family: '@{icomoon-font-family}' !important;
+      content: '\e988';
+      background-color: #fff;
+      color: #d30c5c;
+      font-size: 10px;
+      font-weight: 700;
+      border-radius: 30px;
+      padding: 3px 4px;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+  }
+}
+
+#elementor-panel .elementor-control-title,
+#elementor-panel .elementor-section-title {
+  span.bdt-ep-widget-badge {
+    &:after {
+      background-color: #e0e6ec;
+      color: #50565d;
+    }
+  }
+}
+
+.bdt-ep-new-control {
+  &:after {
+    content: 'NEW';
+    background-color: orangered;
+    color: #fff;
+    font-size: 7px;
+    font-weight: 700;
+    border-radius: 2px;
+    padding: 3px 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+}
+.bdt-ep-updated-control:after {
+  content: 'UPDATED';
+  background-color: #39b54a;
+  color: #fff;
+  font-size: 7px;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 3px 4px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#elementor-panel .elementor-control-type-section {
+  span.bdt-ep-widget-badge {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+// Start rooten theme editor fixing 
+.tm-header-wrapper {
+  pointer-events: none;
+}
+// End rooten theme editor fixing
+
+
+

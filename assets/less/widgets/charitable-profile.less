@@ -1,0 +1,60 @@
+@import url(../base/variables.less);
+
+.bdt-charitable-profile {
+    .charitable-form-fields {
+        input, select, textarea {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+        label {
+            abbr.required {
+                text-decoration: none;
+            }
+        }
+    }
+    .charitable-submit-field {
+        .button {
+            color: #fff;
+            background-color: @global-link-color;
+            border: 0;
+            outline: none;
+            padding: 8px 20px;
+            &:hover {
+                background-color: @global-link-hover-color;
+            }
+        }
+    }
+}
+
+.bdt-charitable-profile {
+    .charitable-login-form {
+        input[type="text"], 
+        input[type="password"] {
+            outline: none;
+            width: 100%;
+            padding: 8px 16px;
+            border: 1px solid #ebebeb;
+        }
+        .login-submit .button {
+            outline: none;
+            cursor: pointer;
+            padding: 6px 12px;
+            border: 0;
+            color: #798184;
+        }
+    }
+    .charitable-login-form > p > a:nth-last-child(1) {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            top: 50%;
+            height: 24px;
+            width: 3px;
+            background: #ebebeb;
+            transform: translateY(-50%);
+        }
+    }
+}
