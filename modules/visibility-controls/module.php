@@ -95,6 +95,7 @@ class Module extends Element_Pack_Module_Base
             'os',
             'browser',
             'ex_url',
+            'url_parameters',
             'search_engine_url',
             'visit_count',
             'session_count',

@@ -28,3 +28,54 @@
     }
     
 }
+.bdt-time-zone-style-analog_1{
+    --clock-color: #08AEEC;
+    .bdt-clock-circle {
+        width: 180px;
+        height: 180px;
+        position: relative;
+        border: 8px solid var(--clock-color);
+        border-radius: 50%;
+
+        margin: auto;
+    }
+
+    .bdt-clock-hour,
+    .bdt-clock-minute,
+    .bdt-clock-second,
+    .bdt-clock-face:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: var(--clock-color);
+    }
+
+    .bdt-clock-hour {
+        margin: -4px 0 -4px -25%;
+        padding: 4px 0 4px 25%;
+        transform-origin: 100% 50%;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .bdt-clock-minute {
+        margin: -40% -3px 0;
+        padding: 40% 3px 0;
+        transform-origin: 50% 100%;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .bdt-clock-second {
+        margin: -40% -1px 0 0;
+        padding: 40% 1px 0;
+        transform-origin: 50% 100%;
+    }
+
+    .bdt-clock-face:after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        margin: -6px 0 0 -6px;
+        border-radius: 6px;
+        display: block;
+    }
+}

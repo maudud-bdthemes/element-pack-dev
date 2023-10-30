@@ -84,7 +84,6 @@
 
     } else if ($settings.layout === 'text_bg') {
       elementorFrontend.waypoint($heading, function () {
-        console.log('Text 3');
         var $selector = $($heading).find('span');
 
         gsap.to($selector, {

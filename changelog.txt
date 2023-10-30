@@ -1,15 +1,16 @@
-## 7.5.XXX [00th October 2023]
+## 7.6.0 [00th October 2023]
 
 ### Added
 
 - Text Background animation added in Animated Heading widget
 - Image effects 3 added in hover box widget
-- Creative button reklo style added
-- Google Review Widget Direction control add
-- Review Card Widget Item & image margin options control add
-- ACF Text, ACF Choice module added in Visibility Control extension
+- Creative button reklo style Added
+- Direction control added in google review widget
+- Item & image margin options control added in review card widget
+- URL Parameters, ACF Text, ACF Choice module added in Visibility Control extension
 - Draggable and Clickable features added in Marquee widget
-
+- Image Hover Effect extension added in image widget
+- Ripple Click Effect extension added in section/container
 
 ### Updated
 
@@ -18,8 +19,8 @@
 ### Fixed
 
 - Focus issue fixed in Social Share widget
-- Ajax Search dropdown styling Control issue fixed in Search Widget
-- Ajax Search Dropdown translated issue fixed in Search Widget
+- Ajax Search dropdown styling Control & translated issue fixed in Search Widget
+- Read more spacing issue fixed in panel slider widget
 
 ## 7.5.4 [15th October 2023]
 
